@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="Mapper.PlatformAuthentiCation">
+    <select id="getPlatformAuthentiCation" parameterType="com.djccm.entity.PlatformAuthentiCation" resultType="com.djccm.entity.PlatformAuthentiCation">
+        SELECT * from platformauthentication
+        WHERE userName=#{userName} and customID='6816471952741844684'
+    </select>
+
+    <select id="getCcinfo" parameterType="com.djccm.entity.CcRechargeHistory" resultType="com.djccm.entity.CcRechargeHistory">
+        SELECT * from `ccrechargehistory_copy` as b where b.rechargeid in ( SELECT a.rechargeid FROM `ccrechargeinfo_copy` as  a where  <![CDATA[defid < '96913181091299999' and defid>'96913181091299300' ]]>  and companyid='681647195274184468482722' and totalbalance=100.00) and orderno='手工导入';
+    </select>
+</mapper>

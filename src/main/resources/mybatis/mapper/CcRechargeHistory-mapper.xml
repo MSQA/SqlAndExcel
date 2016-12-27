@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="Mapper.CcRechargeHistory">
+    <!-- sql block for repeat use -->
+    <!--<sql id="user_column_sql">
+        userId,
+        userName,
+        userPwd
+    </sql>
+
+    <insert id="insert" parameterType="com.rental.entity.UserInfo">
+        INSERT INTO userInfo(
+        <include refid="user_column_sql"/>
+        )
+        VALUES(
+        #{userId},
+        #{userName},
+        #{userPwd}
+        )
+    </insert>
+
+    <select id="findUserInfo" parameterType="map" resultType="com.rental.entity.UserInfo">
+        SELECT * from userInfo
+        WHERE userName=#{name} AND userPwd=#{password}
+    </select>
+
+    &lt;!&ndash;修改密码&ndash;&gt;
+    <update id="updateUserInfo" parameterType="com.rental.entity.UserInfo">
+        UPDATE userinfo <set> userPwd=#{userPwd} </set>  where userId=#{userId}
+    </update>
+
+    <select id="findUserInfoByName" parameterType="com.rental.entity.UserInfo" resultType="com.rental.entity.UserInfo">
+        SELECT * from userInfo
+        WHERE userName=#{userName}
+    </select>-->
+    <sql id="CcRechargeHistory_column_sql">
+        historyid,
+        rechargeid,
+        tradeno,
+        orderid,
+        orderno,
+        userid,
+        name,
+        mobilephone,
+        companyid,
+        shopid,
+        shopname,
+        type,
+        rechargeamount,
+        presentamount,
+        payamount,
+        orderamount,
+        givenamount,
+        feeamount,
+        paytype,
+        paytime,
+        giventime,
+        paystatus
+    </sql>
+    <insert id="insertCcRechargeHistory" parameterType="com.djccm.entity.InsertModel">
+        INSERT INTO ccrechargehistory(
+        <include refid="CcRechargeHistory_column_sql"/>
+        )
+        VALUES(
+        UUID_SHORT(),
+        #{rechargeid},
+        #{tradeno},
+        UUID_SHORT(),
+        #{orderno},
+        #{userid},
+        #{name},
+        #{mobilephone},
+        #{companyid},
+        #{shopid},
+        #{shopname},
+        #{type},
+        #{rechargeamount},
+        #{presentamount},
+        #{payamount},
+        #{orderamount},
+        #{givenamount},
+        #{feeamount},
+        #{paytype},
+        now(),
+        #{giventime},
+        #{paystatus}
+        )
+    </insert>
+</mapper>

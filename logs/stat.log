@@ -1,0 +1,4 @@
+2016-12-01 18:07:11 [ main:29712 ] - [ ERROR ] com.alibaba.druid.filter.stat.StatFilter.internalAfterStatementExecute(StatFilter.java:465) - slow sql 1272 millis. 
+SELECT * from platformauthentication
+        WHERE userName=?
+["oAuPtwvHyYF7vDfAp70TkyOmtMZg_weixin"]

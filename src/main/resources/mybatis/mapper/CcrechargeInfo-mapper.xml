@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="Mapper.CcrechargeInfo">
+    <sql id="CcrechargeInfo_column_sql">
+        rechargeid,
+        defid,
+        userid,
+        companyid,
+        cashbalance,
+        presentbalance,
+        totalbalance,
+        lastmodify
+    </sql>
+    <insert id="insertCcrechargeInfo" parameterType="com.djccm.entity.InsertModel">
+        INSERT INTO ccrechargeinfo(
+        <include refid="CcrechargeInfo_column_sql"/>
+        )
+        VALUES(
+        #{rechargeid},
+        UUID_SHORT(),
+        #{userid},
+        #{companyid},
+        #{cashbalance},
+        #{presentbalance},
+        #{totalbalance},
+        now()
+        )
+    </insert>
+</mapper>

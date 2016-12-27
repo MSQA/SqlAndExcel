@@ -1,0 +1,151 @@
+2016-11-30 14:32:35 [ main:0 ] - [ INFO ] com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:667) - {dataSource-1} inited
+2016-11-30 14:32:35 [ main:212 ] - [ INFO ] com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:667) - {dataSource-2} inited
+2016-11-30 14:32:37 [ main:1662 ] - [ DEBUG ] org.apache.ibatis.logging.slf4j.Slf4jImpl.debug(Slf4jImpl.java:28) - ooo Connection Opened
+2016-11-30 14:32:37 [ main:1941 ] - [ DEBUG ] org.apache.ibatis.logging.slf4j.Slf4jImpl.debug(Slf4jImpl.java:28) - ==>  Executing: SELECT * from platformauthentication WHERE userName=? 
+2016-11-30 14:32:37 [ main:1942 ] - [ DEBUG ] org.apache.ibatis.logging.slf4j.Slf4jImpl.debug(Slf4jImpl.java:28) - ==> Parameters: oWcKys81XUWYbNiKQRKGLWDsyB_4_weixin(String)
+2016-11-30 14:32:37 [ Thread-1:2198 ] - [ INFO ] com.alibaba.druid.pool.DruidDataSource.close(DruidDataSource.java:1383) - {dataSource-2} closed
+2016-11-30 14:32:37 [ Thread-1:2209 ] - [ INFO ] com.alibaba.druid.pool.DruidDataSource.close(DruidDataSource.java:1383) - {dataSource-1} closed
+2016-11-30 14:33:25 [ main:0 ] - [ INFO ] com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:667) - {dataSource-1} inited
+2016-11-30 14:33:25 [ main:179 ] - [ INFO ] com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:667) - {dataSource-2} inited
+2016-11-30 14:33:26 [ main:832 ] - [ DEBUG ] org.apache.ibatis.logging.slf4j.Slf4jImpl.debug(Slf4jImpl.java:28) - ooo Connection Opened
+2016-11-30 14:33:26 [ main:1005 ] - [ DEBUG ] org.apache.ibatis.logging.slf4j.Slf4jImpl.debug(Slf4jImpl.java:28) - ==>  Executing: SELECT * from platformauthentication WHERE userName=? 
+2016-11-30 14:33:26 [ main:1006 ] - [ DEBUG ] org.apache.ibatis.logging.slf4j.Slf4jImpl.debug(Slf4jImpl.java:28) - ==> Parameters: oWcKys81XUWYbNiKQRKGLWDsyB_4_weixin(String)
+2016-11-30 14:33:26 [ main:1039 ] - [ DEBUG ] org.apache.ibatis.logging.slf4j.Slf4jImpl.debug(Slf4jImpl.java:28) - <==    Columns: platformAuthenticationID, personID, userName, password, passwordComplex, isValid, createTime, modifyTime, platformAuthenticationType, customID
+2016-11-30 14:33:26 [ main:1041 ] - [ DEBUG ] org.apache.ibatis.logging.slf4j.Slf4jImpl.debug(Slf4jImpl.java:28) - <==        Row: 1000081733055236293, 8177051670893970191, oWcKys81XUWYbNiKQRKGLWDsyB_4_weixin, -357692196, 2, 1, 2016-07-23 17:16:14.0, null, WECHAT, 10000
+2016-11-30 14:33:26 [ Thread-1:1094 ] - [ INFO ] com.alibaba.druid.pool.DruidDataSource.close(DruidDataSource.java:1383) - {dataSource-2} closed
+2016-11-30 14:33:26 [ Thread-1:1109 ] - [ INFO ] com.alibaba.druid.pool.DruidDataSource.close(DruidDataSource.java:1383) - {dataSource-1} closed
+2016-11-30 15:05:25 [ main:0 ] - [ INFO ] com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:667) - {dataSource-1} inited
+2016-11-30 15:05:25 [ main:184 ] - [ INFO ] com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:667) - {dataSource-2} inited
+2016-11-30 15:05:26 [ main:1055 ] - [ DEBUG ] org.apache.ibatis.logging.slf4j.Slf4jImpl.debug(Slf4jImpl.java:28) - ooo Connection Opened
+2016-11-30 15:05:26 [ main:1219 ] - [ DEBUG ] org.apache.ibatis.logging.slf4j.Slf4jImpl.debug(Slf4jImpl.java:28) - ==>  Executing: INSERT INTO ccrechargeinfo( rechargeid, defid, userid, companyid, cashbalance, presentbalance, totalbalance, lastmodify ) VALUES( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2016-11-30 15:05:26 [ main:1220 ] - [ DEBUG ] org.apache.ibatis.logging.slf4j.Slf4jImpl.debug(Slf4jImpl.java:28) - ==> Parameters: 1001(String), 1001(String), 1010(String), 1001(String), 100.0(Double), 200.0(Double), 300.0(Double), 2015-10-11(String)
+2016-11-30 15:05:26 [ Thread-1:1378 ] - [ INFO ] com.alibaba.druid.pool.DruidDataSource.close(DruidDataSource.java:1383) - {dataSource-2} closed
+2016-11-30 15:05:26 [ Thread-1:1387 ] - [ INFO ] com.alibaba.druid.pool.DruidDataSource.close(DruidDataSource.java:1383) - {dataSource-1} closed
+2016-11-30 15:22:12 [ main:0 ] - [ INFO ] com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:667) - {dataSource-1} inited
+2016-11-30 15:22:12 [ main:201 ] - [ INFO ] com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:667) - {dataSource-2} inited
+2016-11-30 15:22:12 [ main:842 ] - [ DEBUG ] org.apache.ibatis.logging.slf4j.Slf4jImpl.debug(Slf4jImpl.java:28) - ooo Connection Opened
+2016-11-30 15:22:13 [ main:1018 ] - [ DEBUG ] org.apache.ibatis.logging.slf4j.Slf4jImpl.debug(Slf4jImpl.java:28) - ==>  Executing: INSERT INTO rechargehistory( historyid, rechargeid, tradeno, orderid, orderno, userid, name, mobilephone, companyid, shopid, shopname, type, rechargeamount, presentamount, orderamount, givenamount, feeamount, paytype, paytime, giventime, paystatus ) VALUES( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ) 
+2016-11-30 15:22:13 [ main:1019 ] - [ DEBUG ] org.apache.ibatis.logging.slf4j.Slf4jImpl.debug(Slf4jImpl.java:28) - ==> Parameters: 1001(String), 1001(String), 1001(String), 1001(String), 1001(String), 1001(String), lili(String), 13548263041(String), 1001(String), 1001(String), lilili(String), 1(Integer), 0.0(Double), 100.0(Double), 100.0(Double), 0.0(Double), 100.0(Double), 1(Integer), 2015-08-09(String), 2015-06-09(String), 1(Integer)
+2016-11-30 15:22:13 [ Thread-1:1123 ] - [ INFO ] com.alibaba.druid.pool.DruidDataSource.close(DruidDataSource.java:1383) - {dataSource-2} closed
+2016-11-30 15:22:13 [ Thread-1:1134 ] - [ INFO ] com.alibaba.druid.pool.DruidDataSource.close(DruidDataSource.java:1383) - {dataSource-1} closed
+2016-11-30 15:24:08 [ main:0 ] - [ INFO ] com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:667) - {dataSource-1} inited
+2016-11-30 15:24:09 [ main:174 ] - [ INFO ] com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:667) - {dataSource-2} inited
+2016-11-30 15:24:09 [ main:836 ] - [ DEBUG ] org.apache.ibatis.logging.slf4j.Slf4jImpl.debug(Slf4jImpl.java:28) - ooo Connection Opened
+2016-11-30 15:24:10 [ main:1045 ] - [ DEBUG ] org.apache.ibatis.logging.slf4j.Slf4jImpl.debug(Slf4jImpl.java:28) - ==>  Executing: INSERT INTO rechargehistory( historyid, rechargeid, tradeno, orderid, orderno, userid, name, mobilephone, companyid, shopid, shopname, type, rechargeamount, presentamount, orderamount, givenamount, feeamount, paytype, paytime, giventime, paystatus ) VALUES( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ) 
+2016-11-30 15:24:10 [ main:1047 ] - [ DEBUG ] org.apache.ibatis.logging.slf4j.Slf4jImpl.debug(Slf4jImpl.java:28) - ==> Parameters: null, 1001(String), null, null, null, 1001(String), null, null, 1001(String), null, null, 0(Integer), null, null, null, 0.0(Double), 100.0(Double), 0(Integer), null, null, 0(Integer)
+2016-11-30 15:24:10 [ Thread-1:1230 ] - [ INFO ] com.alibaba.druid.pool.DruidDataSource.close(DruidDataSource.java:1383) - {dataSource-2} closed
+2016-11-30 15:24:10 [ Thread-1:1240 ] - [ INFO ] com.alibaba.druid.pool.DruidDataSource.close(DruidDataSource.java:1383) - {dataSource-1} closed
+2016-11-30 15:24:56 [ main:0 ] - [ INFO ] com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:667) - {dataSource-1} inited
+2016-11-30 15:24:56 [ main:294 ] - [ INFO ] com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:667) - {dataSource-2} inited
+2016-11-30 15:24:57 [ main:789 ] - [ DEBUG ] org.apache.ibatis.logging.slf4j.Slf4jImpl.debug(Slf4jImpl.java:28) - ooo Connection Opened
+2016-11-30 15:24:57 [ main:945 ] - [ DEBUG ] org.apache.ibatis.logging.slf4j.Slf4jImpl.debug(Slf4jImpl.java:28) - ==>  Executing: INSERT INTO rechargehistory( historyid, rechargeid, tradeno, orderid, orderno, userid, name, mobilephone, companyid, shopid, shopname, type, rechargeamount, presentamount, orderamount, givenamount, feeamount, paytype, paytime, giventime, paystatus ) VALUES( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ) 
+2016-11-30 15:24:57 [ main:947 ] - [ DEBUG ] org.apache.ibatis.logging.slf4j.Slf4jImpl.debug(Slf4jImpl.java:28) - ==> Parameters: 1002(String), 1001(String), null, null, null, 1001(String), null, null, 1001(String), null, null, 0(Integer), null, null, null, 0.0(Double), 100.0(Double), 0(Integer), null, null, 0(Integer)
+2016-11-30 15:24:57 [ Thread-1:1047 ] - [ INFO ] com.alibaba.druid.pool.DruidDataSource.close(DruidDataSource.java:1383) - {dataSource-2} closed
+2016-11-30 15:24:57 [ Thread-1:1051 ] - [ INFO ] com.alibaba.druid.pool.DruidDataSource.close(DruidDataSource.java:1383) - {dataSource-1} closed
+2016-11-30 16:09:00 [ main:1 ] - [ INFO ] com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:667) - {dataSource-1} inited
+2016-11-30 16:09:00 [ main:244 ] - [ INFO ] com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:667) - {dataSource-2} inited
+2016-11-30 16:09:01 [ main:970 ] - [ DEBUG ] org.apache.ibatis.logging.slf4j.Slf4jImpl.debug(Slf4jImpl.java:28) - ooo Connection Opened
+2016-11-30 16:09:01 [ main:1159 ] - [ DEBUG ] org.apache.ibatis.logging.slf4j.Slf4jImpl.debug(Slf4jImpl.java:28) - ==>  Executing: INSERT INTO ccrechargehistory( historyid, rechargeid, tradeno, orderid, orderno, userid, name, mobilephone, companyid, shopid, shopname, type, rechargeamount, presentamount, payamount, orderamount, givenamount, feeamount, paytype, paytime, giventime, paystatus ) VALUES( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ) 
+2016-11-30 16:09:01 [ main:1160 ] - [ DEBUG ] org.apache.ibatis.logging.slf4j.Slf4jImpl.debug(Slf4jImpl.java:28) - ==> Parameters: 1001(String), 1001(String), 1001(String), 1001(String), 1001(String), 1001(String), lili(String), 13548263041(String), 1001(String), 1001(String), lilili(String), 1(Integer), 0.0(Double), 100.0(Double), 100.0(Double), 100.0(Double), 0.0(Double), 100.0(Double), 1(Integer), 2015-08-09(String), 2015-06-09(String), 1(Integer)
+2016-11-30 16:09:01 [ Thread-1:1253 ] - [ INFO ] com.alibaba.druid.pool.DruidDataSource.close(DruidDataSource.java:1383) - {dataSource-2} closed
+2016-11-30 16:09:01 [ Thread-1:1259 ] - [ INFO ] com.alibaba.druid.pool.DruidDataSource.close(DruidDataSource.java:1383) - {dataSource-1} closed
+2016-11-30 16:24:25 [ main:0 ] - [ INFO ] com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:667) - {dataSource-1} inited
+2016-11-30 16:24:25 [ main:186 ] - [ INFO ] com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:667) - {dataSource-2} inited
+2016-11-30 16:24:25 [ main:811 ] - [ DEBUG ] org.apache.ibatis.logging.slf4j.Slf4jImpl.debug(Slf4jImpl.java:28) - ooo Connection Opened
+2016-11-30 16:24:26 [ main:994 ] - [ DEBUG ] org.apache.ibatis.logging.slf4j.Slf4jImpl.debug(Slf4jImpl.java:28) - ==>  Executing: INSERT INTO ccrechargeinfo( rechargeid, defid, userid, companyid, cashbalance, presentbalance, totalbalance, lastmodify ) VALUES( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2016-11-30 16:24:26 [ main:996 ] - [ DEBUG ] org.apache.ibatis.logging.slf4j.Slf4jImpl.debug(Slf4jImpl.java:28) - ==> Parameters: 10001(String), 1001(String), 1010(String), 1001(String), 100.0(Double), 200.0(Double), 300.0(Double), 2015-10-11(String)
+2016-11-30 16:24:26 [ main:1012 ] - [ DEBUG ] org.apache.ibatis.logging.slf4j.Slf4jImpl.debug(Slf4jImpl.java:28) - ==>  Executing: INSERT INTO ccrechargehistory( historyid, rechargeid, tradeno, orderid, orderno, userid, name, mobilephone, companyid, shopid, shopname, type, rechargeamount, presentamount, payamount, orderamount, givenamount, feeamount, paytype, paytime, giventime, paystatus ) VALUES( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ) 
+2016-11-30 16:24:26 [ main:1013 ] - [ DEBUG ] org.apache.ibatis.logging.slf4j.Slf4jImpl.debug(Slf4jImpl.java:28) - ==> Parameters: 10001(String), 10001(String), 1001(String), 1001(String), 1001(String), 1010(String), lili(String), 13548263041(String), 1001(String), 1001(String), lilili(String), 1(Integer), 0.0(Double), 100.0(Double), 100.0(Double), 100.0(Double), 0.0(Double), 100.0(Double), 1(Integer), 2015-08-09(String), 2015-06-09(String), 1(Integer)
+2016-11-30 16:24:26 [ Thread-1:1144 ] - [ INFO ] com.alibaba.druid.pool.DruidDataSource.close(DruidDataSource.java:1383) - {dataSource-2} closed
+2016-11-30 16:24:26 [ Thread-1:1156 ] - [ INFO ] com.alibaba.druid.pool.DruidDataSource.close(DruidDataSource.java:1383) - {dataSource-1} closed
+2016-11-30 17:48:19 [ main:1 ] - [ INFO ] com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:667) - {dataSource-1} inited
+2016-11-30 17:48:19 [ main:203 ] - [ INFO ] com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:667) - {dataSource-2} inited
+2016-11-30 17:48:19 [ main:829 ] - [ DEBUG ] org.apache.ibatis.logging.slf4j.Slf4jImpl.debug(Slf4jImpl.java:28) - ooo Connection Opened
+2016-11-30 17:48:20 [ main:998 ] - [ DEBUG ] org.apache.ibatis.logging.slf4j.Slf4jImpl.debug(Slf4jImpl.java:28) - ==>  Executing: SELECT * from platformauthentication WHERE userName=? 
+2016-11-30 17:48:20 [ main:999 ] - [ DEBUG ] org.apache.ibatis.logging.slf4j.Slf4jImpl.debug(Slf4jImpl.java:28) - ==> Parameters: 15089854672(String)
+2016-11-30 17:48:20 [ Thread-1:1058 ] - [ INFO ] com.alibaba.druid.pool.DruidDataSource.close(DruidDataSource.java:1383) - {dataSource-2} closed
+2016-11-30 17:48:20 [ Thread-1:1069 ] - [ INFO ] com.alibaba.druid.pool.DruidDataSource.close(DruidDataSource.java:1383) - {dataSource-1} closed
+2016-11-30 17:53:18 [ main:0 ] - [ INFO ] com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:667) - {dataSource-1} inited
+2016-11-30 17:53:18 [ main:194 ] - [ INFO ] com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:667) - {dataSource-2} inited
+2016-11-30 17:53:19 [ main:798 ] - [ DEBUG ] org.apache.ibatis.logging.slf4j.Slf4jImpl.debug(Slf4jImpl.java:28) - ooo Connection Opened
+2016-11-30 17:53:19 [ main:971 ] - [ DEBUG ] org.apache.ibatis.logging.slf4j.Slf4jImpl.debug(Slf4jImpl.java:28) - ==>  Executing: SELECT * from platformauthentication WHERE userName=? 
+2016-11-30 17:53:19 [ main:972 ] - [ DEBUG ] org.apache.ibatis.logging.slf4j.Slf4jImpl.debug(Slf4jImpl.java:28) - ==> Parameters: 15089854672(String)
+2016-11-30 17:53:19 [ Thread-1:1059 ] - [ INFO ] com.alibaba.druid.pool.DruidDataSource.close(DruidDataSource.java:1383) - {dataSource-2} closed
+2016-11-30 17:53:19 [ Thread-1:1064 ] - [ INFO ] com.alibaba.druid.pool.DruidDataSource.close(DruidDataSource.java:1383) - {dataSource-1} closed
+2016-11-30 20:02:47 [ main:0 ] - [ INFO ] com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:667) - {dataSource-1} inited
+2016-11-30 20:02:48 [ main:550 ] - [ INFO ] com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:667) - {dataSource-2} inited
+2016-11-30 20:03:48 [ main:60377 ] - [ DEBUG ] org.apache.ibatis.logging.slf4j.Slf4jImpl.debug(Slf4jImpl.java:28) - ooo Connection Opened
+2016-11-30 20:03:49 [ main:61635 ] - [ DEBUG ] org.apache.ibatis.logging.slf4j.Slf4jImpl.debug(Slf4jImpl.java:28) - ==>  Executing: SELECT * from platformauthentication WHERE userName=? 
+2016-11-30 20:03:49 [ main:61637 ] - [ DEBUG ] org.apache.ibatis.logging.slf4j.Slf4jImpl.debug(Slf4jImpl.java:28) - ==> Parameters: 菜花(String)
+2016-11-30 20:04:28 [ main:100431 ] - [ DEBUG ] org.apache.ibatis.logging.slf4j.Slf4jImpl.debug(Slf4jImpl.java:28) - ooo Connection Opened
+2016-11-30 20:04:28 [ main:100438 ] - [ DEBUG ] org.apache.ibatis.logging.slf4j.Slf4jImpl.debug(Slf4jImpl.java:28) - ==>  Executing: SELECT * from platformauthentication WHERE userName=? 
+2016-11-30 20:04:28 [ main:100440 ] - [ DEBUG ] org.apache.ibatis.logging.slf4j.Slf4jImpl.debug(Slf4jImpl.java:28) - ==> Parameters: 乐乐(String)
+2016-11-30 20:05:14 [ main:146789 ] - [ DEBUG ] org.apache.ibatis.logging.slf4j.Slf4jImpl.debug(Slf4jImpl.java:28) - ooo Connection Opened
+2016-11-30 20:05:14 [ main:146808 ] - [ DEBUG ] org.apache.ibatis.logging.slf4j.Slf4jImpl.debug(Slf4jImpl.java:28) - ==>  Executing: SELECT * from platformauthentication WHERE userName=? 
+2016-11-30 20:05:14 [ main:146810 ] - [ DEBUG ] org.apache.ibatis.logging.slf4j.Slf4jImpl.debug(Slf4jImpl.java:28) - ==> Parameters: Mandy.Lin(String)
+2016-11-30 20:09:09 [ main:381749 ] - [ DEBUG ] org.apache.ibatis.logging.slf4j.Slf4jImpl.debug(Slf4jImpl.java:28) - ooo Connection Opened
+2016-11-30 20:09:09 [ main:381752 ] - [ DEBUG ] org.apache.ibatis.logging.slf4j.Slf4jImpl.debug(Slf4jImpl.java:28) - ==>  Executing: SELECT * from platformauthentication WHERE userName=? 
+2016-11-30 20:09:09 [ main:381753 ] - [ DEBUG ] org.apache.ibatis.logging.slf4j.Slf4jImpl.debug(Slf4jImpl.java:28) - ==> Parameters: 微信用户9266(String)
+2016-11-30 20:09:09 [ main:381757 ] - [ DEBUG ] org.apache.ibatis.logging.slf4j.Slf4jImpl.debug(Slf4jImpl.java:28) - ooo Connection Opened
+2016-11-30 20:09:09 [ main:381759 ] - [ DEBUG ] org.apache.ibatis.logging.slf4j.Slf4jImpl.debug(Slf4jImpl.java:28) - ==>  Executing: SELECT * from platformauthentication WHERE userName=? 
+2016-11-30 20:09:09 [ main:381761 ] - [ DEBUG ] org.apache.ibatis.logging.slf4j.Slf4jImpl.debug(Slf4jImpl.java:28) - ==> Parameters: 金色阳光(String)
+2016-11-30 20:09:09 [ main:381764 ] - [ DEBUG ] org.apache.ibatis.logging.slf4j.Slf4jImpl.debug(Slf4jImpl.java:28) - ooo Connection Opened
+2016-11-30 20:09:09 [ main:381765 ] - [ DEBUG ] org.apache.ibatis.logging.slf4j.Slf4jImpl.debug(Slf4jImpl.java:28) - ==>  Executing: SELECT * from platformauthentication WHERE userName=? 
+2016-11-30 20:09:09 [ main:381766 ] - [ DEBUG ] org.apache.ibatis.logging.slf4j.Slf4jImpl.debug(Slf4jImpl.java:28) - ==> Parameters: 李美珍(String)
+2016-11-30 20:09:09 [ main:381768 ] - [ DEBUG ] org.apache.ibatis.logging.slf4j.Slf4jImpl.debug(Slf4jImpl.java:28) - ooo Connection Opened
+2016-11-30 20:09:09 [ main:381770 ] - [ DEBUG ] org.apache.ibatis.logging.slf4j.Slf4jImpl.debug(Slf4jImpl.java:28) - ==>  Executing: SELECT * from platformauthentication WHERE userName=? 
+2016-11-30 20:09:09 [ main:381771 ] - [ DEBUG ] org.apache.ibatis.logging.slf4j.Slf4jImpl.debug(Slf4jImpl.java:28) - ==> Parameters: 小雨(String)
+2016-11-30 20:09:09 [ main:381773 ] - [ DEBUG ] org.apache.ibatis.logging.slf4j.Slf4jImpl.debug(Slf4jImpl.java:28) - ooo Connection Opened
+2016-11-30 20:09:09 [ main:381775 ] - [ DEBUG ] org.apache.ibatis.logging.slf4j.Slf4jImpl.debug(Slf4jImpl.java:28) - ==>  Executing: SELECT * from platformauthentication WHERE userName=? 
+2016-11-30 20:09:09 [ main:381776 ] - [ DEBUG ] org.apache.ibatis.logging.slf4j.Slf4jImpl.debug(Slf4jImpl.java:28) - ==> Parameters: ゛花开半夏[表情](String)
+2016-11-30 20:09:09 [ main:381779 ] - [ DEBUG ] org.apache.ibatis.logging.slf4j.Slf4jImpl.debug(Slf4jImpl.java:28) - ooo Connection Opened
+2016-11-30 20:09:09 [ main:381781 ] - [ DEBUG ] org.apache.ibatis.logging.slf4j.Slf4jImpl.debug(Slf4jImpl.java:28) - ==>  Executing: SELECT * from platformauthentication WHERE userName=? 
+2016-11-30 20:09:09 [ main:381782 ] - [ DEBUG ] org.apache.ibatis.logging.slf4j.Slf4jImpl.debug(Slf4jImpl.java:28) - ==> Parameters: 次次清(String)
+2016-11-30 20:09:09 [ main:381786 ] - [ DEBUG ] org.apache.ibatis.logging.slf4j.Slf4jImpl.debug(Slf4jImpl.java:28) - ooo Connection Opened
+2016-11-30 20:09:09 [ main:381789 ] - [ DEBUG ] org.apache.ibatis.logging.slf4j.Slf4jImpl.debug(Slf4jImpl.java:28) - ==>  Executing: SELECT * from platformauthentication WHERE userName=? 
+2016-11-30 20:09:09 [ main:381789 ] - [ DEBUG ] org.apache.ibatis.logging.slf4j.Slf4jImpl.debug(Slf4jImpl.java:28) - ==> Parameters: 也无风雨也无晴(String)
+2016-11-30 20:09:09 [ main:381792 ] - [ DEBUG ] org.apache.ibatis.logging.slf4j.Slf4jImpl.debug(Slf4jImpl.java:28) - ooo Connection Opened
+2016-11-30 20:09:09 [ main:381793 ] - [ DEBUG ] org.apache.ibatis.logging.slf4j.Slf4jImpl.debug(Slf4jImpl.java:28) - ==>  Executing: SELECT * from platformauthentication WHERE userName=? 
+2016-11-30 20:09:09 [ main:381794 ] - [ DEBUG ] org.apache.ibatis.logging.slf4j.Slf4jImpl.debug(Slf4jImpl.java:28) - ==> Parameters: 李盛梅(String)
+2016-11-30 20:09:09 [ main:381797 ] - [ DEBUG ] org.apache.ibatis.logging.slf4j.Slf4jImpl.debug(Slf4jImpl.java:28) - ooo Connection Opened
+2016-11-30 20:09:09 [ main:381799 ] - [ DEBUG ] org.apache.ibatis.logging.slf4j.Slf4jImpl.debug(Slf4jImpl.java:28) - ==>  Executing: SELECT * from platformauthentication WHERE userName=? 
+2016-11-30 20:09:09 [ main:381799 ] - [ DEBUG ] org.apache.ibatis.logging.slf4j.Slf4jImpl.debug(Slf4jImpl.java:28) - ==> Parameters: 杨杨(String)
+2016-11-30 20:09:09 [ main:381802 ] - [ DEBUG ] org.apache.ibatis.logging.slf4j.Slf4jImpl.debug(Slf4jImpl.java:28) - ooo Connection Opened
+2016-11-30 20:09:09 [ main:381804 ] - [ DEBUG ] org.apache.ibatis.logging.slf4j.Slf4jImpl.debug(Slf4jImpl.java:28) - ==>  Executing: SELECT * from platformauthentication WHERE userName=? 
+2016-11-30 20:09:09 [ main:381804 ] - [ DEBUG ] org.apache.ibatis.logging.slf4j.Slf4jImpl.debug(Slf4jImpl.java:28) - ==> Parameters: 田老师(String)
+2016-11-30 20:09:09 [ main:381807 ] - [ DEBUG ] org.apache.ibatis.logging.slf4j.Slf4jImpl.debug(Slf4jImpl.java:28) - ooo Connection Opened
+2016-11-30 20:09:09 [ main:381808 ] - [ DEBUG ] org.apache.ibatis.logging.slf4j.Slf4jImpl.debug(Slf4jImpl.java:28) - ==>  Executing: SELECT * from platformauthentication WHERE userName=? 
+2016-11-30 20:09:09 [ main:381808 ] - [ DEBUG ] org.apache.ibatis.logging.slf4j.Slf4jImpl.debug(Slf4jImpl.java:28) - ==> Parameters: 扬扬(String)
+2016-11-30 20:09:09 [ main:381811 ] - [ DEBUG ] org.apache.ibatis.logging.slf4j.Slf4jImpl.debug(Slf4jImpl.java:28) - ooo Connection Opened
+2016-11-30 20:09:09 [ main:381813 ] - [ DEBUG ] org.apache.ibatis.logging.slf4j.Slf4jImpl.debug(Slf4jImpl.java:28) - ==>  Executing: SELECT * from platformauthentication WHERE userName=? 
+2016-11-30 20:09:09 [ main:381814 ] - [ DEBUG ] org.apache.ibatis.logging.slf4j.Slf4jImpl.debug(Slf4jImpl.java:28) - ==> Parameters: 周娟(String)
+2016-11-30 20:09:09 [ main:381817 ] - [ DEBUG ] org.apache.ibatis.logging.slf4j.Slf4jImpl.debug(Slf4jImpl.java:28) - ooo Connection Opened
+2016-11-30 20:09:09 [ main:381821 ] - [ DEBUG ] org.apache.ibatis.logging.slf4j.Slf4jImpl.debug(Slf4jImpl.java:28) - ==>  Executing: SELECT * from platformauthentication WHERE userName=? 
+2016-11-30 20:09:09 [ main:381822 ] - [ DEBUG ] org.apache.ibatis.logging.slf4j.Slf4jImpl.debug(Slf4jImpl.java:28) - ==> Parameters: 编织爱吧(String)
+2016-11-30 20:09:09 [ main:381828 ] - [ DEBUG ] org.apache.ibatis.logging.slf4j.Slf4jImpl.debug(Slf4jImpl.java:28) - ooo Connection Opened
+2016-11-30 20:09:09 [ main:381829 ] - [ DEBUG ] org.apache.ibatis.logging.slf4j.Slf4jImpl.debug(Slf4jImpl.java:28) - ==>  Executing: SELECT * from platformauthentication WHERE userName=? 
+2016-11-30 20:09:09 [ main:381830 ] - [ DEBUG ] org.apache.ibatis.logging.slf4j.Slf4jImpl.debug(Slf4jImpl.java:28) - ==> Parameters: Miss No Way(String)
+2016-11-30 20:09:09 [ main:381832 ] - [ DEBUG ] org.apache.ibatis.logging.slf4j.Slf4jImpl.debug(Slf4jImpl.java:28) - ooo Connection Opened
+2016-11-30 20:09:09 [ main:381834 ] - [ DEBUG ] org.apache.ibatis.logging.slf4j.Slf4jImpl.debug(Slf4jImpl.java:28) - ==>  Executing: SELECT * from platformauthentication WHERE userName=? 
+2016-11-30 20:09:09 [ main:381834 ] - [ DEBUG ] org.apache.ibatis.logging.slf4j.Slf4jImpl.debug(Slf4jImpl.java:28) - ==> Parameters: 微信用户6338(String)
+2016-11-30 20:09:09 [ main:381837 ] - [ DEBUG ] org.apache.ibatis.logging.slf4j.Slf4jImpl.debug(Slf4jImpl.java:28) - ooo Connection Opened
+2016-11-30 20:09:09 [ main:381838 ] - [ DEBUG ] org.apache.ibatis.logging.slf4j.Slf4jImpl.debug(Slf4jImpl.java:28) - ==>  Executing: SELECT * from platformauthentication WHERE userName=? 
+2016-11-30 20:09:09 [ main:381839 ] - [ DEBUG ] org.apache.ibatis.logging.slf4j.Slf4jImpl.debug(Slf4jImpl.java:28) - ==> Parameters: rebecca(String)
+2016-11-30 20:09:09 [ main:381841 ] - [ DEBUG ] org.apache.ibatis.logging.slf4j.Slf4jImpl.debug(Slf4jImpl.java:28) - ooo Connection Opened
+2016-11-30 20:09:09 [ main:381843 ] - [ DEBUG ] org.apache.ibatis.logging.slf4j.Slf4jImpl.debug(Slf4jImpl.java:28) - ==>  Executing: SELECT * from platformauthentication WHERE userName=? 
+2016-11-30 20:09:09 [ main:381843 ] - [ DEBUG ] org.apache.ibatis.logging.slf4j.Slf4jImpl.debug(Slf4jImpl.java:28) - ==> Parameters: dd(String)
+2016-11-30 20:09:09 [ main:381846 ] - [ DEBUG ] org.apache.ibatis.logging.slf4j.Slf4jImpl.debug(Slf4jImpl.java:28) - ooo Connection Opened
+2016-11-30 20:09:09 [ main:381847 ] - [ DEBUG ] org.apache.ibatis.logging.slf4j.Slf4jImpl.debug(Slf4jImpl.java:28) - ==>  Executing: SELECT * from platformauthentication WHERE userName=? 
+2016-11-30 20:09:09 [ main:381848 ] - [ DEBUG ] org.apache.ibatis.logging.slf4j.Slf4jImpl.debug(Slf4jImpl.java:28) - ==> Parameters: A诚信烟草(String)
+2016-11-30 22:44:15 [ main:0 ] - [ INFO ] com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:667) - {dataSource-1} inited
+2016-11-30 22:44:16 [ main:202 ] - [ INFO ] com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:667) - {dataSource-2} inited
+2016-11-30 22:44:41 [ main:26015 ] - [ DEBUG ] org.apache.ibatis.logging.slf4j.Slf4jImpl.debug(Slf4jImpl.java:28) - ooo Connection Opened
+2016-11-30 22:44:43 [ main:27195 ] - [ DEBUG ] org.apache.ibatis.logging.slf4j.Slf4jImpl.debug(Slf4jImpl.java:28) - ==>  Executing: SELECT * from platformauthentication WHERE userName=? 
+2016-11-30 22:44:43 [ main:27197 ] - [ DEBUG ] org.apache.ibatis.logging.slf4j.Slf4jImpl.debug(Slf4jImpl.java:28) - ==> Parameters: 15089854672(String)
+2016-11-30 22:44:43 [ main:27603 ] - [ DEBUG ] org.apache.ibatis.logging.slf4j.Slf4jImpl.debug(Slf4jImpl.java:28) - <==    Columns: platformAuthenticationID, personID, userName, password, passwordComplex, isValid, createTime, modifyTime, platformAuthenticationType, customID
+2016-11-30 22:44:43 [ main:27606 ] - [ DEBUG ] org.apache.ibatis.logging.slf4j.Slf4jImpl.debug(Slf4jImpl.java:28) - <==        Row: 1000081733055236292, 22222222222, 15089854672, 123456, null, 1, null, null, null, 10000
+2016-11-30 22:44:53 [ main:37157 ] - [ DEBUG ] org.apache.ibatis.logging.slf4j.Slf4jImpl.debug(Slf4jImpl.java:28) - ooo Connection Opened
+2016-11-30 22:44:53 [ main:37218 ] - [ DEBUG ] org.apache.ibatis.logging.slf4j.Slf4jImpl.debug(Slf4jImpl.java:28) - ==>  Executing: INSERT INTO ccrechargeinfo( rechargeid, defid, userid, companyid, cashbalance, presentbalance, totalbalance, lastmodify ) VALUES( ?, ?, ?, ?, ?, ?, ?, now() ) 
+2016-11-30 22:44:53 [ main:37226 ] - [ DEBUG ] org.apache.ibatis.logging.slf4j.Slf4jImpl.debug(Slf4jImpl.java:28) - ==> Parameters: ea2a657f-f0e6-42ff-ba69-00ece9153ba3(String), a2b282a1-8ac9-401a-98c5-d16ed6b98cb8(String), 22222222222(String), 892485852779041661174379(String), 0.0(Double), 0.0(Double), 0.0(Double)
+2016-11-30 22:44:53 [ main:37290 ] - [ DEBUG ] org.apache.ibatis.logging.slf4j.Slf4jImpl.debug(Slf4jImpl.java:28) - ==>  Executing: INSERT INTO ccrechargehistory( historyid, rechargeid, tradeno, orderid, orderno, userid, name, mobilephone, companyid, shopid, shopname, type, rechargeamount, presentamount, payamount, orderamount, givenamount, feeamount, paytype, paytime, giventime, paystatus ) VALUES( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ) 
+2016-11-30 22:44:53 [ main:37293 ] - [ DEBUG ] org.apache.ibatis.logging.slf4j.Slf4jImpl.debug(Slf4jImpl.java:28) - ==> Parameters: ff7e1079-b52f-49a2-9a82-70613b007438(String), ea2a657f-f0e6-42ff-ba69-00ece9153ba3(String), null, 56d63283-2ce3-4b7b-becc-d865babcd91f(String), 8eaaaec9-4878-4c9d-975a-909e07facc41(String), 22222222222(String), 菜花(String), null, 892485852779041661174379(String), null, null, 1(Integer), 100.0(Double), 0.0(Double), null, null, null, null, 0(Integer), null, null, 1(Integer)
