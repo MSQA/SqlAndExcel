@@ -15,9 +15,7 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import java.io.*;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 
 /**
@@ -210,6 +208,70 @@ public class PlatformAuthentiCationTest {
         }
 
 
+    }
+
+    public void getCcinfo(List exportList) throws BaseException {
+        String targetfile = "/Users/lihuanzhong/chengduTest1.xls";//输出的excel文件名
+        String worksheet = "List";//输出的excel文件工作表名
+        //String[] title1 = {"userID","电话","姓名","rechargid"};//excel工作表的标题
+
+        WritableWorkbook workbook;
+        try {
+            System.out.println("begin");
+            OutputStream os = new FileOutputStream(targetfile);
+            workbook = Workbook.createWorkbook(os);
+            WritableSheet sheet = workbook.createSheet(worksheet, 0); //添加第一个工作表
+            jxl.write.Label label;
+            Map listMap1 = (Map) exportList.get(0);
+            Iterator ii1=listMap1.entrySet().iterator();
+            while(ii1.hasNext()) {
+                for (int j = 0; j < listMap1.size(); j++) {
+                    Map.Entry entry = (Map.Entry) ii1.next();
+                    label = new jxl.write.Label(j, 0,entry.getKey().toString()); //put the title in row1
+                    sheet.addCell(label);
+                }
+            }
+//            for (int j = 0; j < title1.length; j++) {
+//                label = new jxl.write.Label(j, 0, title1[j]); //put the title in row1
+//                sheet.addCell(label);
+//            }
+            for (int i = 0; i < exportList.size(); i++) {
+                Map listMap = (Map) exportList.get(i);
+                Iterator ii=listMap.entrySet().iterator();
+                while(ii.hasNext()) {
+                    for (int j = 0; j < listMap.size(); j++) {
+                        Map.Entry entry = (Map.Entry) ii.next();
+                        jxl.write.Label labelCF = new jxl.write.Label(j,i+1,entry.getValue().toString());
+                        sheet.addCell(labelCF);
+                    }
+                }
+            }
+
+            workbook.write();
+            workbook.close();
+        }catch(Exception e)
+        {
+            e.printStackTrace();
+        }
+    }
+    @Test
+    public void insertRe() throws BaseException {
+        List<Map<String,String>> movies = new ArrayList<Map<String,String>>();
+        Map jsonMap = new HashMap();
+        jsonMap.put("startTime", "1111");
+        jsonMap.put("name", "2222");
+        jsonMap.put("sex", "3333");
+        jsonMap.put("number", "4444");
+
+        Map jsonMap1 = new HashMap();
+        jsonMap1.put("startTime", "2111");
+        jsonMap1.put("name", "3222");
+        jsonMap1.put("sex", "4333");
+        jsonMap1.put("number", "5444");
+        movies.add(jsonMap);
+        movies.add(jsonMap1);
+        //Collections.reverse();
+        getCcinfo(movies);
     }
     /*@Test
     public void insertRe() throws BaseException {
